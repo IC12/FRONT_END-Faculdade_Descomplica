@@ -40,9 +40,10 @@ export class LoginComponent {
         {
           next: (response) => {
             console.log(response.idToken)
-            if(response.idToken)
-            this.autorizacaoService.autorizar(response.idToken);
-            this.router.navigate(['/usuario']);
+            if(response.idToken){
+              this.autorizacaoService.autorizar(response.idToken);
+              this.router.navigate(['/usuario']);
+            }
           },
           error: (erro: any) => {
             console.log('entrou no erro')

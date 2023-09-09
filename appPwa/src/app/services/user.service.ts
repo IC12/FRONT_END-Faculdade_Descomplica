@@ -15,6 +15,9 @@ const httpOptions = {
 })
 export class UserService {
   BASE_URL: string = 'http://localhost:3000/';
+  FIREBASE_URL: string = 'https://identitytoolkit.googleapis.com/';
+  TOKEN_FIREBASE: string = 'AIzaSyDThl5AbjP3GU4XvtdpBn5ZvVUFVXMJMSA';
+
   constructor(private http: HttpClient) { }
   /**  POST  user api  ADD User Function  */
   addUser(user: User): Observable<User> {
@@ -25,10 +28,10 @@ export class UserService {
   }
 
   login(data: any): Observable<UserAuth> {
+    var url: string = "v1/accounts:signInWithPassword?key=";
     console.log(data);
-    var url: string = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDThl5AbjP3GU4XvtdpBn5ZvVUFVXMJMSA';
-    console.log(url)
-    return this.http.post<UserAuth>(url, data, httpOptions);
+    console.log(this.FIREBASE_URL + url + this.TOKEN_FIREBASE)
+    return this.http.post<UserAuth>(this.FIREBASE_URL + url + this.TOKEN_FIREBASE, data, httpOptions);
 
   }
   /**  PUT user api EDIT User Function  */
@@ -37,10 +40,10 @@ export class UserService {
     return this.http.put<User>(url, user, httpOptions);
   }
 
-  getUserById(id: string): Observable<UserReturn> {
+  getUserById(): Observable<UserReturn> {
     let data = {idToken: localStorage.getItem('token') || ''}
-    var url: string = 'https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyDThl5AbjP3GU4XvtdpBn5ZvVUFVXMJMSA';
-    return this.http.post<UserReturn>(url, data, httpOptions).pipe(
+    var url: string = "v1/accounts:lookup?key=";
+    return this.http.post<UserReturn>(this.FIREBASE_URL + url + this.TOKEN_FIREBASE, data, httpOptions).pipe(
       tap((retorno: UserReturn) => {
         console.log(retorno)
       }

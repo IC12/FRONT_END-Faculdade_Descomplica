@@ -19,7 +19,7 @@ export class UserInfoComponent implements OnInit {
   }
 
   getUser(): void {
-    this.service.getUserById('1').subscribe(
+    this.service.getUserById().subscribe(
       {
         next: (response) => {
           console.log('entrou no response')
