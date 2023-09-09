@@ -11,7 +11,8 @@ export class UserInfoComponent implements OnInit {
 
   email: string = ''
   localId: string = ''
-  user: UserReturn = new UserReturn('',[]);
+  user: UserReturn = new UserReturn('', []);
+
   constructor(private service: UserService) { }
 
   ngOnInit(): void {
@@ -25,13 +26,13 @@ export class UserInfoComponent implements OnInit {
           console.log('entrou no response')
           console.log(response)
           //this.users = response;
-          if(response){
+          if (response) {
             this.user = response;
-            if(this.user.users){
+            if (this.user.users) {
               this.email = this.user.users[0].email;
-            } 
+            }
           }
-          
+
           /*
           if(user != null)
           this.email = user.users[0].email*/

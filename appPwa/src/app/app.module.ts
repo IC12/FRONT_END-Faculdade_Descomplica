@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { MatInputModule } from '@angular/material/input';
@@ -30,17 +29,14 @@ import { PrivadoComponent } from './pages/privado/privado.component';
 import { DetalheComponent } from './pages/detalhe/detalhe.component';
 import { ParametroComponent } from './pages/parametro/parametro.component';
 import { ListaSimplesComponent } from './pages/lista-simples/lista-simples.component';
-
 import { SubrouteComponent } from './pages/subroute/subroute.component';
 import { Page1Component } from './pages/subroute/page1/page1.component';
 import { Page2Component } from './pages/subroute/page2/page2.component';
-
 import { EditarComponent } from './pages/editar/editar.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { DialogContentExampleDialog, ModalComponent } from './pages/modal/modal.component';
-
 
 // *************** POPUPS & MODALS ***************
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
@@ -49,7 +45,6 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { TableComponent } from './components/table/table.component';
 import { UserInfoComponent } from './pages/user-info/user-info.component';
-
 
 @NgModule({
   declarations: [
@@ -72,7 +67,6 @@ import { UserInfoComponent } from './pages/user-info/user-info.component';
     ModalComponent,
     TableComponent,
     UserInfoComponent
-
   ],
   imports: [
     BrowserModule,
@@ -106,4 +100,5 @@ import { UserInfoComponent } from './pages/user-info/user-info.component';
   providers: [UserService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

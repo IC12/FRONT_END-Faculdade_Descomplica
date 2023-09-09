@@ -8,7 +8,9 @@ import studentsData from '../../students.json';
   templateUrl: './manipulando-json.component.html',
   styleUrls: ['./manipulando-json.component.css']
 })
+
 export class ManipulandoJsonComponent implements OnInit {
+  
   students: Student[] = studentsData;  
 
   constructor(private router: Router) { }
@@ -16,7 +18,8 @@ export class ManipulandoJsonComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.students)
   }
-  goToDetail(student: Student){
+
+  goToDetail(student: Student): void {
     this.router.navigate(['/detalhe', student.id]);
   }
 

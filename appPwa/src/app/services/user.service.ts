@@ -13,6 +13,7 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
+
 export class UserService {
   BASE_URL: string = 'http://localhost:3000/';
   FIREBASE_URL: string = 'https://identitytoolkit.googleapis.com/';
@@ -32,8 +33,8 @@ export class UserService {
     console.log(data);
     console.log(this.FIREBASE_URL + url + this.TOKEN_FIREBASE)
     return this.http.post<UserAuth>(this.FIREBASE_URL + url + this.TOKEN_FIREBASE, data, httpOptions);
-
   }
+
   /**  PUT user api EDIT User Function  */
   editUser(user: any): Observable<User> {
     var url: string = this.BASE_URL + 'users/' + user.id;;
@@ -41,7 +42,7 @@ export class UserService {
   }
 
   getUserById(): Observable<UserReturn> {
-    let data = {idToken: localStorage.getItem('token') || ''}
+    let data = { idToken: localStorage.getItem('token') || '' }
     var url: string = "v1/accounts:lookup?key=";
     return this.http.post<UserReturn>(this.FIREBASE_URL + url + this.TOKEN_FIREBASE, data, httpOptions).pipe(
       tap((retorno: UserReturn) => {
@@ -62,21 +63,20 @@ export class UserService {
       ),
       catchError(this.handleError<User[]>('erro ao listar eventos'))
     )
-
   }
 
-
-  private handleError<T> (operation = 'operation', result?: T) {
-
+  private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(error); // log to console instead
       this.log(`${operation} failed: ${error.message}`);
       return of(result as T);
     };
   }
+
   private log(message: string) {
     console.log(`EventoService: ${message}`);
   }
+
   /** DELETE: delete user Function*/
   deleteUser(user: User | string): Observable<User> {
     const id = typeof user === 'string' ? user : user.id;

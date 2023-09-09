@@ -9,19 +9,12 @@ import { UserService } from 'src/app/services/user.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent {
   addressForm = this.fb.group({
     email: ['', Validators.required],
     senha: ['', Validators.required],
   });
-  /*email = this.addressForm.controls['email'];
-
-  getErrorMessage() {
-    if (this.email.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return this.email.hasError('email') ? 'Not a valid email' : '';
-  }*/
 
   constructor(
     private fb: FormBuilder,
@@ -40,7 +33,7 @@ export class LoginComponent {
         {
           next: (response) => {
             console.log(response.idToken)
-            if(response.idToken){
+            if (response.idToken) {
               this.autorizacaoService.autorizar(response.idToken);
               this.router.navigate(['/usuario']);
             }

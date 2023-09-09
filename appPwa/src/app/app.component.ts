@@ -9,13 +9,14 @@ import { map, Observable, shareReplay } from 'rxjs';
 })
 export class AppComponent {
 
+  title: any;
+
+  constructor(private breakpointObserver: BreakpointObserver) { }
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
       shareReplay()
     );
-
-
-  constructor(private breakpointObserver: BreakpointObserver) { }
 
 }

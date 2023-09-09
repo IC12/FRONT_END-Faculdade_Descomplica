@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   title = 'appPwa';
+  nome: string = "Estudante Iara Camargos";
+  
   constructor() { }
-  nome:string = "Estudante Iara Camargos";
+  
   ngOnInit(): void {
   }
-  
+
 }

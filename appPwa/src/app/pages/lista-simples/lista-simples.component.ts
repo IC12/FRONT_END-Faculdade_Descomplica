@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { EMPTY } from 'rxjs';
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 
@@ -9,9 +8,10 @@ import { UserService } from 'src/app/services/user.service';
   templateUrl: './lista-simples.component.html',
   styleUrls: ['./lista-simples.component.css']
 })
+
 export class ListaSimplesComponent implements OnInit {
 
-  users: User[] = [];  
+  users: User[] = [];
   constructor(private router: Router, public service: UserService) { }
 
   ngOnInit(): void {
@@ -34,9 +34,8 @@ export class ListaSimplesComponent implements OnInit {
     )
   }
 
-  goToDetail(user: User){
+  goToDetail(user: User): void {
     this.router.navigate(['/detalhe', user.id]);
   }
-
 
 }

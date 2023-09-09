@@ -2,108 +2,120 @@
   "users": [
     {
       "id": 1,
-      "Name": "Bruno Hauck",
-      "email": "brunohauck@gmail.com",
-      "phone": "1234567890",
-      "cpf": "0000",
-      "password": "123456",
-      "dateBirth": "2000-11-15T03:00:00.000Z"
+      "Name": "Jack Daniels",
+      "email": "jackdaniels@hotmail.com",
+      "phone": "09987654321",
+      "cpf": "05126769685",
+      "password": "123#456987",
+      "dateBirth": "1980-11-15T03:00:00.000Z"
     },
     {
       "id": 2,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Bruno Espetro",
+      "email": "brunoespetro@gmail.com",
+      "phone": "32930123456",
+      "cpf": "34803354030",
+      "password": "fdsfds#890",
+      "dateBirth": "1977-10-10T03:00:00.000Z"
     },
     {
       "id": 3,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Carla Baltimore",
+      "email": "carlabaltimore@yahoo.com.br",
+      "phone": "78932394567",
+      "cpf": "30483124044",
+      "password": "87#iutg546",
+      "dateBirth": "1997-03-04T03:00:00.000Z"
     },
     {
       "id": 4,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Joana D'Arc",
+      "email": "joanadarc@gmail.com.br",
+      "phone": "45963230987",
+      "cpf": "10390743089",
+      "password": "tgfr#45670",
+      "dateBirth": "1999-07-07T03:00:00.000Z"
     },
     {
       "id": 5,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Luiz Augusto",
+      "email": "luizaugusto@hotmail.com",
+      "phone": "71749163258",
+      "cpf": "05853879073",
+      "password": "f1d5s7f9ds",
+      "dateBirth": "1987-05-13T03:00:00.000Z"
     },
     {
       "id": 6,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Gustavo Esposito",
+      "email": "gustavoesposito@gmail.com",
+      "phone": "93949239278",
+      "cpf": "32654010066",
+      "password": "56789rtd#4",
+      "dateBirth": "1975-02-02T03:00:00.000Z"
     },
     {
       "id": 7,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Derci Coraline",
+      "email": "dercicoraline@yahoo.com.br",
+      "phone": "67685527289",
+      "cpf": "27290780027",
+      "password": "1023@edkhf",
+      "dateBirth": "1989-01-19T03:00:00.000Z"
     },
     {
       "id": 8,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Perla Melo",
+      "email": "perlamelo@hotmail.com",
+      "phone": "31998345678",
+      "cpf": "37336566014",
+      "password": "8zJ-$pBA&,",
+      "dateBirth": "1995-08-09T03:00:00.000Z"
     },
     {
       "id": 9,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Felipe Deniro",
+      "email": "felipedeniro@gmail.com.br",
+      "phone": "53639921117",
+      "cpf": "81735337099",
+      "password": "DOkPx.En@-",
+      "dateBirth": "1998-08-23T03:00:00.000Z"
     },
     {
       "id": 10,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Tânia Castilho",
+      "email": "taniacastilho@gmail.com",
+      "phone": "67229351525",
+      "cpf": "40797239030",
+      "password": "|QBPOPRD?@",
+      "dateBirth": "1989-07-26T03:00:00.000Z"
     },
     {
       "id": 11,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Robert Alfonse",
+      "email": "robertalfonse@yahoo.com.br",
+      "phone": "89377513789",
+      "cpf": "63149838002",
+      "password": "8Tr^sC6;IB",
+      "dateBirth": "2000-03-17T03:00:00.000Z"
     },
     {
       "id": 12,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "John Carlo",
+      "email": "johncarlo@hotmail.com",
+      "phone": "32165917369",
+      "cpf": "88297223086",
+      "password": "TZd*c)eO!G",
+      "dateBirth": "2000-11-20T03:00:00.000Z"
     },
     {
       "id": 13,
-      "Name": "Bruno",
-      "email": "brunohauck@gmail.com",
-      "phone": "323",
-      "cpf": "05126769685",
-      "password": "fdsfds"
+      "Name": "Pepita Marcia",
+      "email": "pepitamarcia@gmail.com.br",
+      "phone": "24897579866",
+      "cpf": "14739414074",
+      "password": "Iw2BnTdMl3",
+      "dateBirth": "1992-12-18T03:00:00.000Z"
     }
   ]
 }

@@ -8,4 +8,5 @@ const routes: Routes = [{ path: '', component: LazyComponent }];
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
+
 export class LazyRoutingModule { }
