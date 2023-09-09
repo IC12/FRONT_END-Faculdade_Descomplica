@@ -22,7 +22,7 @@ export class ListarComponent implements AfterViewInit, OnInit {
     this.getUsers()
   }
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'firstName', 'email', 'phone', 'cpf'];
+  displayedColumns = ['id', 'Name', 'email', 'phone', 'cpf'];
   getUsers(): void {
     this.service.getUsers().subscribe(
       {

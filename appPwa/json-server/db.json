@@ -2,15 +2,16 @@
   "users": [
     {
       "id": 1,
-      "firstName": "Bruno Hauck",
+      "Name": "Bruno Hauck",
       "email": "brunohauck@gmail.com",
       "phone": "1234567890",
       "cpf": "0000",
-      "password": "123456"
+      "password": "123456",
+      "dateBirth": "2000-11-15T03:00:00.000Z"
     },
     {
       "id": 2,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -18,7 +19,7 @@
     },
     {
       "id": 3,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -26,7 +27,7 @@
     },
     {
       "id": 4,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -34,7 +35,7 @@
     },
     {
       "id": 5,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -42,7 +43,7 @@
     },
     {
       "id": 6,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -50,7 +51,7 @@
     },
     {
       "id": 7,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -58,7 +59,7 @@
     },
     {
       "id": 8,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -66,7 +67,7 @@
     },
     {
       "id": 9,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -74,7 +75,7 @@
     },
     {
       "id": 10,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -82,7 +83,7 @@
     },
     {
       "id": 11,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -90,7 +91,7 @@
     },
     {
       "id": 12,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",
@@ -98,7 +99,7 @@
     },
     {
       "id": 13,
-      "firstName": "Bruno",
+      "Name": "Bruno",
       "email": "brunohauck@gmail.com",
       "phone": "323",
       "cpf": "05126769685",

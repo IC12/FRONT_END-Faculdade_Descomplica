@@ -21,7 +21,7 @@ export class EditarComponent {
     console.log(this.user);
     this.addressForm = this.fb.group({
       id: this.user.id,
-      firstName: [this.user.firstName, Validators.required],
+      Name: [this.user.Name, Validators.required],
       email: [this.user.email, [Validators.required, Validators.email]],
       phone: [this.user.phone, Validators.required],
       password: [this.user.password, Validators.required],
@@ -46,8 +46,8 @@ export class EditarComponent {
 
   onSubmit(): void {
     this.user.id = '1';
-    if(this.addressForm.controls['firstName'].value)
-      this.user.firstName= this.addressForm.controls['firstName'].value;
+    if(this.addressForm.controls['Name'].value)
+      this.user.Name= this.addressForm.controls['Name'].value;
     if(this.addressForm.controls['email'].value)
       this.user.email= this.addressForm.controls['email'].value;
     if(this.addressForm.controls['phone'].value)

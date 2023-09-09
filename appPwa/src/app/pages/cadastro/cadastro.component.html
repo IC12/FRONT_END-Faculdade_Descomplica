@@ -1,5 +1,5 @@
 <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
-  <mat-card class="shipping-card">
+  <mat-card class="cadastre">
     <mat-card-header>
       <mat-card-title>Cadastro</mat-card-title>
     </mat-card-header>
@@ -7,9 +7,9 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="fill">
-            <input matInput placeholder="Nome" formControlName="firstName">
-            <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
-              O nome é <strong>obrigatório</strong>
+            <input matInput placeholder="Nome" formControlName="Name">
+            <mat-error *ngIf="addressForm.controls['Name'].hasError('required')">
+              O nome é <strong>obrigatório</strong>!
             </mat-error>
           </mat-form-field>
         </div>
@@ -17,7 +17,7 @@
       <div class="row">
         <div class="col">
           <mat-form-field>
-            <mat-label>Enter your email</mat-label>
+            <mat-label>Insira seu email</mat-label>
             <input matInput placeholder="pat@example.com" formControlName="email">
             <mat-error *ngIf="addressForm.controls['email'].hasError('required')">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
@@ -26,9 +26,9 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="fill">
-            <input matInput placeholder="Phone" mask="(00) 0000-0000" formControlName="phone">
-            <mat-error *ngIf="addressForm.controls['phone'].hasError('required')">
-              Telefone é <strong>obrigatório</strong>
+            <input matInput placeholder="Telefone" mask="(00) 0000-0000" formControlName="telefone">
+            <mat-error *ngIf="addressForm.controls['telefone'].hasError('required')">
+              Telefone é <strong>obrigatório</strong>!
             </mat-error>
           </mat-form-field>
         </div>
@@ -36,8 +36,8 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="fill">
-            <input matInput placeholder="Senha" type="password" formControlName="password">
-            <mat-error *ngIf="addressForm.controls['password'].hasError('required')">
+            <input matInput placeholder="Senha" type="password" formControlName="senha">
+            <mat-error *ngIf="addressForm.controls['senha'].hasError('required')">
               Senha é <strong>obrigatório</strong>!
             </mat-error>
           </mat-form-field>
@@ -48,10 +48,10 @@
           <mat-form-field class="fill">
             <input matInput placeholder="CPF" mask="000.000.000-00" formControlName="cpf">
             <mat-error *ngIf="addressForm.controls['cpf'].hasError('required')">
-              CPF é <strong>obrigatório</strong>
+              CPF é <strong>obrigatório</strong>!
             </mat-error>
             <mat-error *ngIf="addressForm.controls['cpf'].getError('cpfNotValid')">
-              CPF não é <strong>Valido</strong>
+              CPF não é <strong>Valido</strong>!
             </mat-error>
           </mat-form-field>
         </div>
@@ -59,9 +59,9 @@
       <div class="row">
         <div class="col">
           <mat-form-field appearance="fill">
-            <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker">
-            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-label>Data de Nascimento</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dataNascimento">
+            <mat-hint>DD/MM/YYYY</mat-hint>
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>

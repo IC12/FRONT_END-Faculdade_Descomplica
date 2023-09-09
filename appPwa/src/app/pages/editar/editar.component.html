@@ -1,5 +1,5 @@
 <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
-    <mat-card class="shipping-card">
+    <mat-card class="edit">
       <mat-card-header>
         <mat-card-title>Cadastro</mat-card-title>
       </mat-card-header>
@@ -7,9 +7,9 @@
         <div class="row">
           <div class="col">
             <mat-form-field class="fill">
-              <input matInput placeholder="Nome" formControlName="firstName">
-              <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
-                First name is <strong>required</strong>
+              <input matInput placeholder="Nome" formControlName="Name">
+              <mat-error *ngIf="addressForm.controls['Name'].hasError('required')">
+                O nome é <strong>obrigatório</strong>!
               </mat-error>
             </mat-form-field>
           </div>
@@ -17,7 +17,7 @@
         <div class="row">
           <div class="col">
            <mat-form-field >
-              <mat-label>Enter your email</mat-label>
+              <mat-label>Insira seu email</mat-label>
               <input matInput placeholder="pat@example.com" formControlName="email" >
               <mat-error *ngIf="addressForm.controls['email'].hasError('required')">{{getErrorMessage()}}</mat-error>
             </mat-form-field>
@@ -28,7 +28,7 @@
             <mat-form-field class="fill">
               <input matInput placeholder="Phone" formControlName="phone">
               <mat-error *ngIf="addressForm.controls['phone'].hasError('required')">
-                Telefone é <strong>obrigatório</strong>
+                Telefone é <strong>obrigatório</strong>!
               </mat-error>
             </mat-form-field>
           </div>

@@ -79,7 +79,7 @@ export class ListarDataSource extends DataSource<User> {
     return data.sort((a, b) => {
       const isAsc = this.sort?.direction === 'asc';
       switch (this.sort?.active) {
-        case 'firstName': return compare(a.firstName, b.firstName, isAsc);
+        case 'Name': return compare(a.Name, b.Name, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
         case 'cpf': return compare(+a.cpf, +b.cpf, isAsc);
         case 'phone': return compare(+a.phone, +b.phone, isAsc);

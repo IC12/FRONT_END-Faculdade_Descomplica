@@ -15,12 +15,12 @@ export class CadastroComponent {
   user: User = new User();  
   addressForm = this.fb.group({
     id: this.user.id,
-    firstName: [this.user.firstName, Validators.required],
+    Name: [this.user.Name, Validators.required],
     email: [this.user.email, [Validators.required, Validators.email]],
-    phone: [this.user.phone, Validators.required],
+    telefone: [this.user.phone, Validators.required],
     cpf: [this.user.cpf, [Validators.required, GenericValidator.isValidCpf()]],
-    password: [this.user.password, Validators.required],
-    dataNascimento: [this.user.dataNascimento, Validators.required],
+    senha: [this.user.password, Validators.required],
+    dataNascimento: [this.user.dateBirth, Validators.required],
   });
 
   hasUnitNumber = false;
@@ -28,39 +28,40 @@ export class CadastroComponent {
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
-      return 'You must enter a value';
+      return 'Você precisa inserir um email';
     }
-
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 
   constructor(private fb: FormBuilder,  private service: UserService) {}
 
   onSubmit(): void {
-    if(this.addressForm.controls['firstName'].value)
-      this.user.firstName= this.addressForm.controls['firstName'].value;
+    if(this.addressForm.controls['Name'].value)
+      this.user.Name= this.addressForm.controls['Name'].value;
     if(this.addressForm.controls['email'].value)
       this.user.email= this.addressForm.controls['email'].value;
-    if(this.addressForm.controls['phone'].value)
-      this.user.phone = this.addressForm.controls['phone'].value;  
-    if(this.addressForm.controls['password'].value)
-      this.user.password = this.addressForm.controls['password'].value;
+    if(this.addressForm.controls['telefone'].value)
+      this.user.phone = this.addressForm.controls['telefone'].value;  
+    if(this.addressForm.controls['senha'].value)
+      this.user.password = this.addressForm.controls['senha'].value;
     if(this.addressForm.controls['cpf'].value)
-      this.user.cpf = this.addressForm.controls['cpf'].value;  
+      this.user.cpf = this.addressForm.controls['cpf'].value;
+    if(this.addressForm.controls['dataNascimento'].value)
+      this.user.dateBirth = this.addressForm.controls['dataNascimento'].value;  
       
     console.log(this.user);
     localStorage.setItem('user', JSON.stringify(this.user));
     this.service.addUser(this.user).subscribe(
       {
         next: (response) => {
-          console.log(response)
+          console.log(response);
           alert("Usuário cadastrado com sucesso.");
 
         },
         error: (erro: any) => {
           console.log('entrou no erro')
           alert("Ocorreu um erro.");
-          console.log(erro)
+          console.log(erro);
         }
       }
     )

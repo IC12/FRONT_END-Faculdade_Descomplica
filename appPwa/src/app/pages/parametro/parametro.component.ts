@@ -8,9 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ParametroComponent implements OnInit {
 
-  title = 'descomplica';
+  title = 'appPwa';
   constructor(private route: ActivatedRoute) {}
-  nome:string = "Professor Bruno Hauck";
+  nome:string = "Estudante Iara Camargos";
   ngOnInit(): void {
     this.route.data.subscribe(data => {
       console.log(data);

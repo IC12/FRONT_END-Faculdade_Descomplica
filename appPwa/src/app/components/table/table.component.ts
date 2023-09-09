@@ -15,7 +15,7 @@ export class TableComponent {
 
   }
   /*
-  displayedColumns = ['id', 'firstName', 'email', 'phone', 'cpf'];
+  displayedColumns = ['id', 'Name', 'email', 'phone', 'cpf'];
   dataSource: MatTableDataSource<User>;
   
   @ViewChild(MatPaginator) paginator: MatPaginator;

@@ -12,7 +12,7 @@ import { UserService } from 'src/app/services/user.service';
 export class LoginComponent {
   addressForm = this.fb.group({
     email: ['', Validators.required],
-    password: ['', Validators.required],
+    senha: ['', Validators.required],
   });
   /*email = this.addressForm.controls['email'];
 
@@ -30,7 +30,7 @@ export class LoginComponent {
     private autorizacaoService: AutorizacaoService) { }
 
   obterDescricaoLogin = () =>
-    this.autorizacaoService.obterLoginStatus() ? "Estou Autorizado" : "Nao Estou Autorizado";
+    this.autorizacaoService.obterLoginStatus() ? "Estou Autorizado" : "Não Estou Autorizado";
 
   onSubmit(): void {
     if (this.autorizacaoService.obterLoginStatus())
