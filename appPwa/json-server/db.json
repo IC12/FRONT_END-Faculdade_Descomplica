@@ -1,3 +1,6 @@
+//no diretório onde se encontra a pasta json-server, no terminal digite: 'json-server --watch db.json'
+//para visualização da lista de users tanto no projeto principal como em http separado
+
 {
   "users": [
     {
