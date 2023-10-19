@@ -6,5 +6,3 @@ Exercícios usando JavaScript
 
 # Advanced Front-End
 Exercícios PWA, Angular, Node, Json e JWT
-
-teste
